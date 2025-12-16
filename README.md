@@ -97,4 +97,5 @@ disables the `dummy0` ethernet device, which is useless.
 ID: DEEGLE_NO_CONNECT_WAIT
 
 The [systemd configuration](meta-deegle/recipes-core/systemd/systemd_%.bbappend) is modified
-so that `systemd-networkd-wait-online` service only waits for the fist device to be ready.
+so that the `systemd-networkd-wait-online` service does nothing, since the board is offline
+and the USB ethernet is only a debug feature.
