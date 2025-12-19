@@ -77,11 +77,17 @@ Additionally the `kea` dhcp server is added and
 to proivde an IPv4 address to the host.
 This address should be in the range of `192.168.7.10` to `192.168.7.20`.
 
+### I2C Support
+
+ID: DEEGLE_I2C_SUPPORT
+
+The Deegle Linux provides i2c-tools for I2C access.
+
 ### GPIO Support
 
 ID: DEEGLE_GPIO_SUPPORT
 
-The Deegle Linux provides libgpiod and python3-gpio for GPIO access.
+The Deegle Linux provides libgpiod and libgpiod-tools for GPIO access.
 
 ## Other configuration
 
@@ -99,3 +105,11 @@ ID: DEEGLE_NO_CONNECT_WAIT
 The [systemd configuration](meta-deegle/recipes-core/systemd/systemd_%.bbappend) is modified
 so that the `systemd-networkd-wait-online` service does nothing, since the board is offline
 and the USB ethernet is only a debug feature.
+
+## BeagleBone Black
+
+Examples for BeagleBlone Black usage are descirbed in [bbb.md](bbb.md)
+
+## PocketBeagle 2
+
+Examples for PocketBeagle 2 usage are descirbed in [pb2.md](pb2.md)
